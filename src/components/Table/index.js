@@ -1,7 +1,7 @@
 import React from 'react';
 const Table = (props) => {
     const renderHeader = () => {
-        let headerElement = [...props.header]
+        let headerElement = [...props.header || [] ]
         return headerElement.map((key, index) => {
             return <th key={index}>{key.toUpperCase()}</th>
         })
